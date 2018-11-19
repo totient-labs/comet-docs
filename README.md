@@ -74,7 +74,7 @@ When a user interacts with a dApp via Comet, they may be on the mainnet or testn
 
 For example:
 ```javascript
-web3.eth.getChainTag(chainTagHex => {
+web3.eth.getChainTag().then(chainTagHex => {
   const chainTag = parseInt(chainTagHex, 16)
   switch (chainTag) {
     case 74:
