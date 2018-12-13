@@ -46,8 +46,10 @@ make
 ### Run node
 Once built you will want to run the node in solo mode
 ```
-./bin/thor solo
+./bin/thor solo --api-cors "*"
 ```
+
+The `--api-cors` flag enables secure websocket connections from web3 and the extension.
 
 The node should now be up and running and ready to connect. To reset the local blockchain, simply kill the service and restart.
 
