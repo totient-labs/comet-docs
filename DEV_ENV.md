@@ -5,6 +5,8 @@ This guide will cover the process of setting up your local environment for devel
 - [Setting up `web3-gear` to use `truffle` with VeChain](#web3-gear)
 - [Setting up truffle to work with VeChain](#truffle)
 
+*Note: This guide assumes you are using MacOS with `homebrew` and `pip3` installed. We welcome any pull requests to expand this guide to other platforms*
+
 ### Overview of development stack
 ![VeChain Development Stack](https://user-images.githubusercontent.com/747165/49694457-54432c80-fb3f-11e8-81dc-1940c12f8891.png)
 
