@@ -46,8 +46,10 @@ make
 ### Run node
 Once built you will want to run the node in `solo` mode. This instructs the node to run locally as its own network instead of connecting to `testnet` or `mainnet`.
 ```
-./bin/thor solo
+./bin/thor solo --api-cors "*"
 ```
+
+The `--api-cors` flag enables secure websocket connections from web3 and the Comet extension.
 
 The node should now be up and running and ready to connect. Unless specified with further options, all blockchain data will be stored in-memory and will be reset when you kill the process. This is useful for continual debugging.
 
