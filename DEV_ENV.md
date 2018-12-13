@@ -137,11 +137,14 @@ Note that this only works in the latest `master` of `thor`. You must run your lo
 Comet enables `web3` within VeChainThor dApps. Comet can easily be configured to connect to your local node for development purposes.
 ### Connecting to local node
 In `Settings > Network`, ensure that you are connected to `Localhost`. Your node will need to be running on the default port: `8669` for Comet to connect.
+
 ![screen shot 2018-12-13 at 11 49 10 am](https://user-images.githubusercontent.com/747165/49963539-1f333300-fecd-11e8-9284-ed108a36968a.png)
 
 ### Importing private keys
 Upon launch of your local node, you are presented with the set of hardcoded local node wallet addresses:
+
 ![screen shot 2018-12-13 at 11 55 50 am](https://user-images.githubusercontent.com/747165/49964152-a208bd80-fece-11e8-9d4e-1ba848cdb863.png)
 
 These can be imported into Comet in `Accounts > Add`:
+
 ![screen shot 2018-12-13 at 12 05 46 pm](https://user-images.githubusercontent.com/747165/49964473-70442680-fecf-11e8-8eac-47d1a1add967.png)
