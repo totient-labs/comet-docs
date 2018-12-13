@@ -1,4 +1,4 @@
-# VeChain Development Environment
+# VeChainThor Development Environment
 This guide will cover the process of setting up your local environment for developing on the VeChainThor blockchain using the standard `web3` stack.
 
 - [Setting up your local VeChain Thor node](#vechain-thor-local-node)
