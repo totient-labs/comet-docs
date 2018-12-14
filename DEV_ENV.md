@@ -75,6 +75,8 @@ pip3 install web3-gear
 web3-gear
 ```
 ### Other useful options
+These options will be useful in later sections for deploying your contracts to `testnet` or `mainnet`.
+
 | Flag | Description |
 | --- | --- |
 | --host | rpc service host, eg: `--host 127.0.0.1` |
@@ -88,30 +90,20 @@ Full Guide: https://github.com/vechain/web3-gear/blob/master/README.rst
 ## Truffle
 Truffle is your development environment for building and deploying contract code. Truffle is an Ethereum project however using web3-gear, can work with VeChainThor.
 
-### Initialize
-If you have not yet initialized truffle in your project run
-```
-truffle init
-```
+If you do not already have a truffle project started please start by reading through their documentation [here](https://truffleframework.com/docs/truffle/overview).
 
 ### Configure
-Configure your project to talk to `web3-gear` in your `truffle.js` file
+Once you have a truffle project setup you may configure your project to talk to `web3-gear` by updating your `truffle.js` file
 ```
 module.exports = {
     networks: {
         development: {
             host: "localhost",
-            port: 8545,
-            network_id: "*" // Match any network id
+            port: 8545,        // Default web3-gear port
+            network_id: "*"    // Match any network id
         }
     }
 };
-```
-
-### Build
-To build your project run
-```
-truffle build
 ```
 
 ### Deploy
@@ -143,7 +135,7 @@ In `Settings > Network`, ensure that you are connected to `Localhost`. Your node
 ![screen shot 2018-12-13 at 11 49 10 am](https://user-images.githubusercontent.com/747165/49963539-1f333300-fecd-11e8-9284-ed108a36968a.png)
 
 ### Importing private keys
-Upon launch of your local node, you are presented with the set of hardcoded local node wallet addresses:
+Upon launch of your local node, you will be presented with the set of hardcoded local node wallet addresses:
 
 ![screen shot 2018-12-13 at 11 55 50 am](https://user-images.githubusercontent.com/747165/49964152-a208bd80-fece-11e8-9d4e-1ba848cdb863.png)
 
