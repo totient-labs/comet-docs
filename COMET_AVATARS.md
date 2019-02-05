@@ -8,7 +8,7 @@ The `<id>` URL parameter in the below examples can either be the Comet Token ID 
 ## Full Comet:
 URL: `https://www.cometverse.com/comet/<id|address>.svg`
 
-Usage: `<img src="https://www.cometverse.com/comet/<id|address>.svg" alt="Mini Comet" height="256" width="256">`
+Usage: `<img src="https://www.cometverse.com/comet/<id|address>.svg" alt="Full Comet" height="256" width="256">`
 
 <img src="https://www.cometverse.com/comet/3.svg" alt="Mini Comet" height="256" width="256">
 
