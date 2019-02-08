@@ -5,6 +5,7 @@ This repo contains docs for development with the Comet extension
 - [Developer Environment Setup](./DEV_ENV.md)
 - [Compatibility Guide](./COMPATIBILITY_GUIDE.md)
 - [Comet Avatars](./COMET_AVATARS.md)
+- [User Authentication](./USER_AUTHENTICATION)
 
 # Developer Discord
 Join our Developer Discord to collaborate with the Comet dev team and other blockchain developers.
