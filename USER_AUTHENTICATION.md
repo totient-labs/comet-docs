@@ -1,16 +1,16 @@
 # Authenticating Users
 
-Comet provides ways to authenticate users using both Web3 and Connex. The overall flow for user authentication is as follows:
+Comet supports multiple ways to authenticate users using both Web3 and Connex. The overall flow for user authentication is as follows:
 
-1. Generate an Auth message
+1. Server generates an Auth message
 2. Present the message to the user for signing
-3. Retrieve address and signature from the user
-4. Recover the address from the signature and verify
-
+3. User signs message and sends back to server
+4. Server recovers the address from the signature and verifies
 
 Note: This guide assumes you are working with an Express Server with Express Sessions middleware
 ## 1. Generate an Auth message
 ```js
+// server.js
 function generateChallengeMessage () {
   return `dApp Authentication (${Math.random().toString(36).substring(2)})`
 }
@@ -51,7 +51,7 @@ const signature = await web3.eth.personal.sign(challenge, address)
 const signatureData = { signature, address }
 ```
 
-## 3. Retrieve address and signature from the user
+## 3. User signs message and sends back to server
 ```js
 // client.js
 const response = await fetch('/auth', {
@@ -60,7 +60,7 @@ const response = await fetch('/auth', {
 })
 ```
 
-## 4. Recover the address from the signature and verify
+## 4. Server recovers the address from the signature and verifies
 ```js
 // server.js
 import { toBuffer } from 'ethereumjs-util'
