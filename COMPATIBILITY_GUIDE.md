@@ -119,4 +119,4 @@ const accountInterval = setInterval(function() {
     cometAccount = currentAccount
     updateInterface();
   }
-}, 100);
+}, 300);
